@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 export function Apropos() {
     return(
         <div id="apropos"className="fixed top-110 w-full flex flex-col items-center">
