@@ -7,7 +7,7 @@ export default function Projet() {
             <div className="absolute top-30 grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto items-stretch">
                 <ProjetCard
                     link = "https://github.com/Bastient6/My_job"
-                    image = "./src/assets/image.png"
+                    image = "/image.png"
                     title = "My_Job"
                     description = "Création d'un job board"
                     technos = {["React / Tailwind", "Node.js / Express"]}
@@ -21,21 +21,21 @@ export default function Projet() {
                 />
                 <ProjetCard
                     link = "https://github.com/Bastient6/ZAPPY"
-                    image = "./src/assets/zappy.png"
+                    image = "/zappy.png"
                     title = "ZAPPY"
                     description = "Year-End Project (B4 - EPITECH)"
                     technos = {["C / C++ / Python"]}
                 />
                 <ProjetCard
                     link = "https://github.com/Bastient6/Utilisation-avanc-e-du-Go-en-WebASM"
-                    image = "./src/assets/go.png"
+                    image = "/go.png"
                     title = "introduction au go"
                     description = "workshop d'innitiation"
                     technos = {["go"]}
                 />
                 <ProjetCard
                     link = "https://github.com/Bastient6/pushswap_checker"
-                    image = "./src/assets/haskell.png"
+                    image = "/haskell.png"
                     title = "pushswap_checker"
                     description = "rush deuxième année épitech"
                     technos = {["haskell"]}

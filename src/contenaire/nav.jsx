@@ -6,7 +6,7 @@ export default function Nav() {
   	return (
     	<nav className={`flex items-center justify-between fixed top-0 left-0 w-full p-4 z-50 transition-all duration-300 ${statusScroll ? "text-white bg-transparent" : "text-[#00010e] bg-[#dae1e6]"}`}>
         	<a href="/">
-            	<img className="w-20 h-auto mr-4 rounded-md" src="./src/assets/logo.png" alt="bastien" />
+            	<img className="w-20 h-auto mr-4 rounded-md" src="/logo.png" alt="bastien" />
        		</a>
       		<div className={`absolute ${!statusScroll ? "left-1/2 transform -translate-x-1/2 text-2xl": "left-30"} text-2xl hidden sm:block`}>
         		<h1 className={`font-black ${!statusScroll ? "text-5xl": "text-4xl"}`}>Bastien Tiffy</h1>
