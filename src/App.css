@@ -1,0 +1,50 @@
+.star {
+  	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 50%;
+	background-color: #093c67;
+	animation: orbit linear infinite;
+}
+
+@keyframes orbit {
+	0% {
+		transform: rotate(var(--start-rotation)) translateX(var(--orbit-radius)) rotate(calc(-1 * var(--start-rotation)));
+	}
+	100% {
+		transform: rotate(calc(var(--start-rotation) + 360deg))
+		translateX(var(--orbit-radius))
+		rotate(calc(-1 * (var(--start-rotation) + 360deg)));
+	}
+}
+
+@keyframes scaled {
+	100% {
+		width: 100vw;
+		height: 100vh;
+		border-radius: 0;
+	}
+}
+
+@keyframes scaledDown {
+  	0% {  
+		width: 100vw;
+		height: 100vh;
+	}
+}
+
+.scaled {
+	animation-duration: 1s;
+	animation-name: scaled;
+	animation-fill-mode: forwards;
+}
+
+.scaledDown {
+	animation-duration: 1s;
+	animation-name: scaledDown;
+	animation-fill-mode: forwards;
+}
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
