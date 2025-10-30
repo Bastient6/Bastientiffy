@@ -14,7 +14,7 @@ export function Apropos() {
 						</div>
 						<div className="flex items-center">
 							<img className="w-1/10 h-auto" src="/mail.png"></img>
-							<a className="ml-10" to="/contact">bastien.tiffy@epitech.eu</a>
+							<Link className="ml-10" to="/contact">bastien.tiffy@epitech.eu</Link>
 						</div>
 						<div className="flex items-center">
 							<a href="https://www.linkedin.com/in/bastien-tiffy-34b7a2241/"><img className="w-1/2 h-auto" src="/linkedin.png"></img></a>
