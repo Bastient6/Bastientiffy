@@ -10,16 +10,16 @@ export function Apropos() {
 					<p className="mt-10 ml-10 leading-relaxed">Contact</p>
 					<div className="ml-10 leading-relaxed text-lg">
 						<div className="flex items-center">
-							<img className="w-1/10 h-auto" src="/tel.png"></img>
+							<img className="w-1/10 h-auto" src="/tel.png" alt="Tel"></img>
 							<a className="ml-10" href="tel:+33651674638">06.51.67.46.38</a>
 						</div>
 						<div className="flex items-center">
-							<img className="w-1/10 h-auto" src="/mail.png"></img>
+							<img className="w-1/10 h-auto" src="/mail.png" alt="Mail"></img>
 							<Link className="ml-10" to="/contact">bastien.tiffy@epitech.eu</Link>
 						</div>
 						<div className="flex items-center">
-							<a href="https://www.linkedin.com/in/bastien-tiffy-34b7a2241/"><img className="w-1/2 h-auto" src="/linkedin.png"></img></a>
-							<a href="https://github.com/Bastient6"><img className="w-1/2 h-auto" src="/github.png" ></img></a>
+							<a href="https://www.linkedin.com/in/bastien-tiffy-34b7a2241/"><img className="w-1/2 h-auto" src="/linkedin.png" alt="Linkedin"></img></a>
+							<a href="https://github.com/Bastient6"><img className="w-1/2 h-auto" src="/github.png" alt="Github"></img></a>
 						</div>
 					</div>
 				</div>
