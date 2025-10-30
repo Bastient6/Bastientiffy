@@ -2,7 +2,7 @@ import ProjetCard from "./projetCard";
 
 export default function Projet() {
     return (
-        <div id="Mesprojets" className="fixed top-350 md:top-250 lg:top-280 w-full flex flex-col items-center">
+        <div id="Mesprojets" className="fixed top-350 md:top-280 lg:top-280 w-full flex flex-col items-center">
             <h1 className="md:absolute top-10 right-0 transform md:-translate-x-1/2 text-4xl text-[#ff7699] font-black text-5xl">Mes Projets</h1>
             <div className="absolute top-30 grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto items-stretch">
                 <ProjetCard
