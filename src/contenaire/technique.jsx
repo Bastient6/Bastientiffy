@@ -2,9 +2,9 @@ import TechnoCard from "./technoCard"
 
 export default function Projet() {
     return (
-        <div id="Stacktechnique" className="fixed top-800 md:top-500 lg:top-430 w-full flex flex-col items-center">
-	        <h1 className="absolute top-50 right-0 transform -translate-x-1/2 text-4xl text-[#ff7699]">Stack Technique</h1>
-        	<div className="absolute top-80 grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+        <div id="Stacktechnique" className="fixed top-850 md:top-500 lg:top-480 w-full flex flex-col items-center">
+	        <h1 className="md:absolute top-10 right-0 transform md:-translate-x-1/2 text-4xl text-[#ff7699] font-black text-5xl">Stack Technique</h1>
+        	<div className="absolute top-30 grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
         		<TechnoCard
 					title = "OS"
 					technos={[
