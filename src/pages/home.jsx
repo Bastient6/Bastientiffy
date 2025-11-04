@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { useScrollStatus } from "../context/ScrollContext";
-import { Apropos } from "../contenaire/apropos";
+import Apropos from "../contenaire/apropos";
 import Projet from "../contenaire/projet"
 import Technique from "../contenaire/technique"
 import Star from "../contenaire/Star";
@@ -10,21 +10,20 @@ export default function Home() {
     const {setStatusScroll } = useScrollStatus();
 	const [status, setStatus] = useState(false);
 	const [scrollPosition, setScrollPosition] = useState(0);
-	const divRef = useRef(null);
-	const ticking = useRef(false);
+	const isScroll = useRef(false);
 
 	const handleScroll = (e) => {
 		const target = e.target;
 		const y = target.scrollTop;
 		const scrollMax = 1500;
 
-		if (!ticking.current) {
-			ticking.current = true;
+		if (!isScroll.current) {
+			isScroll.current = true;
 			window.requestAnimationFrame(() => {
 				setScrollPosition(y);
 				if (y > scrollMax)
 					setScrollPosition(scrollMax);
-				ticking.current = false;
+				isScroll.current = false;
 			});
 		}
 	};
@@ -52,7 +51,7 @@ export default function Home() {
 
 	return (
 		<div className="flex justify-center items-center h-screen overflow-hidden bg-[#dae1e6]">
-			<div id="box" ref={divRef} onScroll={handleScroll} className="relative bg-[#00010E] rounded-4xl overflow-y-scroll overflow-x-hidden w-4/5 h-3/4">
+			<div id="box" onScroll={handleScroll} className="relative bg-[#00010E] rounded-4xl overflow-y-scroll overflow-x-hidden w-4/5 h-3/4">
 				<div className="stars absolute top-0 left-0 w-full h-full z-0 pointer-events-none" style={{ transform: `translateY(${scrollPosition}px)` }}>
 					<Star />
 				</div>

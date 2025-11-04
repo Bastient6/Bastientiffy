@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-export function Apropos() {
+export default function Apropos() {
 	const download = () => {
         const pdfUrl = "/Bastien_Tiffy_CV.pdf";
         const link = document.createElement("a");
