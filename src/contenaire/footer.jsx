@@ -1,5 +1,16 @@
 import { useScrollStatus } from "../context/ScrollContext";
 import { useState } from "react";
+const scrollToSection = (id) => {
+
+        const scrollTop = document.getElementById("box").scrollTop + (document.getElementById(id).getBoundingClientRect().top - document.getElementById("box").getBoundingClientRect().top);
+
+        document.getElementById("box").scrollTo({
+            top: scrollTop,
+            behavior: "smooth",
+        });
+
+        setMenuOpen(false);
+};
 
 export default function Footer() {
     const { statusScroll } = useScrollStatus();
@@ -14,15 +25,15 @@ export default function Footer() {
                 <div>
                     {menuOpen && (
                         <el-menu onClick={() => setMenuOpen(!menuOpen)} className="bg-[#093c67]/25 text-card-foreground fixed bottom-8 right-0 flex justify-center items-center rounded-xl p-6">
-                            <a href="#apropos" className="xl:text-xl font-montserrat text-center mx-5 text-sm text-[#ff7699] hover:text-blue-600 transition-colors duration-300 relative group">
+                            <a onClick={() => scrollToSection("apropos")} className="xl:text-xl font-montserrat text-center mx-5 text-sm text-[#ff7699] hover:text-blue-600 transition-colors duration-300 relative group">
                                 À propos
                                 <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full"></span>
                             </a>
-                            <a href="#Mesprojets" className="xl:text-xl font-montserrat text-center mx-5 text-sm text-[#ff7699] hover:text-blue-600 transition-colors duration-300 relative group">
+                            <a onClick={() => scrollToSection("Mesprojets")} className="xl:text-xl font-montserrat text-center mx-5 text-sm text-[#ff7699] hover:text-blue-600 transition-colors duration-300 relative group">
                                 Mes projets
                                 <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full"></span>
                             </a>
-                            <a href="#Stacktechnique" className="xl:text-xl font-montserrat text-center mx-5 text-sm text-[#ff7699] hover:text-blue-600 transition-colors duration-300 relative group">
+                            <a onClick={() => scrollToSection("Stacktechnique")} className="xl:text-xl font-montserrat text-center mx-5 text-sm text-[#ff7699] hover:text-blue-600 transition-colors duration-300 relative group">
                                 Stack Technique
                                 <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full"></span>
                             </a>

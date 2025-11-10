@@ -17,14 +17,21 @@ export default function Projet() {
                     image = "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
                     title = "digital_resume"
                     description = "Création d'un cv en ligne"
-                    technos = {["html / Tailwind", "Design et utilisation de shell pour accéder à chaque section"]}
+                    technos = {["html", "Tailwind"]}
                 />
                 <ProjetCard
                     link = "https://github.com/Bastient6/ZAPPY"
                     image = "/zappy.png"
                     title = "ZAPPY"
                     description = "Year-End Project (B4 - EPITECH)"
-                    technos = {["C / C++ / Python"]}
+                    technos = {["C / C++", "Python"]}
+                />
+                <ProjetCard
+                    link = "https://github.com/Bastient6/Bastientiffy"
+                    image = "/logo.png"
+                    title = "portfolio"
+                    description = "code de ce portfolio"
+                    technos = {["React / tailwind"]}
                 />
                 <ProjetCard
                     link = "https://github.com/Bastient6/Utilisation-avanc-e-du-Go-en-WebASM"
