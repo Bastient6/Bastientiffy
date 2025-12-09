@@ -47,6 +47,13 @@ export default function Projet() {
                     description = "rush deuxième année épitech"
                     technos = {["haskell"]}
                 />
+                <ProjetCard
+                    link = "https://github.com/Bastient6/TheLastGuest"
+                    image = "/java.png"
+                    title = "The last Guest"
+                    description = "jeu en 2D en Java"
+                    technos = {["Java"]}
+                />
             </div>
         </div>
     );
