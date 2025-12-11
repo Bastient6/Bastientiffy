@@ -21,7 +21,7 @@
 @keyframes scaled {
 	100% {
 		width: 100vw;
-		height: 100vh;
+		height: 100dvh;
 		border-radius: 0;
 	}
 }
@@ -29,7 +29,7 @@
 @keyframes scaledDown {
   	0% {  
 		width: 100vw;
-		height: 100vh;
+		height: 100dvh;
 	}
 }
 
