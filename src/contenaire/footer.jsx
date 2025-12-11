@@ -17,7 +17,7 @@ export default function Footer() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <footer className={`flex items-center justify-between fixed bottom-0 left-0 w-full bg-transparent p-4 ${statusScroll ? "text-white bg-transparent" : "text-black bg-[#dae1e6]"}`}>
+        <footer className={`flex items-center justify-between fixed bottom-0 left-0 w-full bg-transparent p-4 ${statusScroll ? "text-white bg-transparent" : "text-black bg-[#dae1e6] lg:text-white lg:bg-transparent"}`}>
             <div className="w-2/6 h-auto mr-4 text-sm">
                 <h5>2025 - Designé et développé par Bastien Tiffy</h5>
             </div>
@@ -39,7 +39,7 @@ export default function Footer() {
                             </a>
                         </el-menu>
                     )}
-                    <button onClick={() => setMenuOpen(!menuOpen)} className="fixed bottom-0 right-0 xl:text-xl font-montserrat bg-transparent text-center mx-5 text-sm">Menu</button>
+                    <button onClick={() => setMenuOpen(!menuOpen)} className="fixed bottom-0 right-0 xl:text-xl font-montserrat bg-transparent text-center mx-5 text-sm text-white lg:text-black">Menu</button>
                 </div>
             </div>
         </footer>
