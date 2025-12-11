@@ -50,7 +50,8 @@ export default function Home() {
 	}, [pos, status, setStatusScroll]);
 
 	return (
-			<div id="box" onScroll={handleScroll} className="relative bg-[#00010E] rounded-4xl overflow-y-scroll overflow-x-hidden w-4/5 h-3/4">
+		<div className="flex justify-center items-center h-screen overflow-hidden bg-[#dae1e6]">
+			<div id="box" onScroll={handleScroll} className="relative bg-[#00010E] rounded-4xl overflow-y-scroll overflow-x-hidden w-full h-full md:w-4/5 md:h-3/4">
 				<div className="stars absolute top-0 left-0 w-full h-full z-0 pointer-events-none" style={{ transform: `translateY(${scrollPosition}px)` }}>
 					<Star />
 				</div>
@@ -72,5 +73,6 @@ export default function Home() {
 					<Technique/>
 				</div>
 			</div>
+		</div>
 	);
 }
