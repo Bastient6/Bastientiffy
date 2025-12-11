@@ -15,7 +15,7 @@ export default function Apropos() {
 			<div className="md:flex top-30 font-montserrat absolute text-left text-white text-2xl justify-center">
 				<img src="/photo.jpg" className="rounded-full w-1/5 ml-10 md:ml-0 md:w-1/4 h-1/4 mb-4 object-contain" alt="pp bastien"/>
 				<div className="flex flex-col md:w-1/4">
-					<p className="ml-10 leading-relaxed text-lg text-justify">Passionné par la tech,le developpement et l'automatisation, je me forme à Epitech Montpellier. Volontaire au SDIS 34 (Pompier), je combine rigueur, adaptabilité et esprit d'équipe au quotidien.</p>
+					<p className="ml-10 leading-relaxed text-lg text-justify">Passionné par la tech,le developpement et l'automatisation, aprés 2 années dans le programme grande ecole, je me forme actuellement en master of science à Epitech Montpellier. Volontaire au SDIS 34 (Pompier), je combine rigueur, adaptabilité et esprit d'équipe au quotidien.</p>
 					<p className="mt-10 ml-10 leading-relaxed">Contact</p>
 					<div className="ml-10 leading-relaxed text-lg">
 						<div className="flex items-center">
