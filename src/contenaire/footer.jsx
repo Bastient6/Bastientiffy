@@ -39,7 +39,7 @@ export default function Footer() {
                             </a>
                         </el-menu>
                     )}
-                    <button onClick={() => setMenuOpen(!menuOpen)} className="fixed bottom-0 right-0 xl:text-xl font-montserrat bg-transparent text-center mx-5 text-sm text-white lg:text-black">Menu</button>
+                    <button onClick={() => setMenuOpen(!menuOpen)} className="fixed bottom-0 right-0 xl:text-xl font-montserrat bg-transparent text-center mx-5 text-sm text-white">Menu</button>
                 </div>
             </div>
         </footer>
